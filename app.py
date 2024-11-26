@@ -5,6 +5,8 @@ app = Flask(__name__)
 API_KEY = '47d89e1c6e7a4d908f47327c49d7bfeb'  # Замените на ваш API ключ OpenWeatherMap
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather'
 
+
+
 @app.route('/weather', methods=['GET'])
 def get_weather():
     city = request.args.get('city')  # Получаем название города из параметров запроса
